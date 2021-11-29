@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "frontend:install": "cd udagram/udagram-frontend && npm install",
-    "backend:install": "cd udagram-api && npm install",
+    "backend:install": "cd udagram/udagram-api && npm install",
     "frontend:build": "cd udagram/udagram-frontend && npm run build",
-    "backend:build": "cd udagram-api && npm run build",
+    "backend:build": "cd udagram/udagram-api && npm run build",
     "frontend:deploy": "cd udagram/udagram-frontend && pwd && npm run deploy",
     "backend:deploy": "cd udagram/udagram-api && pwd && npm run deploy"
   },
