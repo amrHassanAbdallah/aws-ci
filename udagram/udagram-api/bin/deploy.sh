@@ -1,5 +1,5 @@
 pwd
 ls 
-ls udagram/udagram-api/www
+ls www
 eb setenv SERVER_PORT=5000
 eb deploy --staged Be-env
