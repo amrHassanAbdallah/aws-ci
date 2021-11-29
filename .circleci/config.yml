@@ -22,6 +22,7 @@ jobs:
       - run:
           name: Front-End Build
           command: |
+            export NODE_OPTIONS=--openssl-legacy-provider
             npm run frontend:build
       - run:
           name: Back-End Build
