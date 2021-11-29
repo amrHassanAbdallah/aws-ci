@@ -6,6 +6,10 @@ global:
   default_ec2_keyname: e-67uts5vvis
   default_platform: Node.js
   default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
   sc: git
-deploy:
-  artifact: udagram/udagram-api/www/Archive.zip
+  workspace_type: Application
