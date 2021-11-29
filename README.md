@@ -41,5 +41,11 @@ Alongside automating the CI/CD using circleci.
     ```
 That's it.
 
+### To access the site
+```
+https://ud-fe.s3.amazonaws.com/index.html
+```
+In order to access yours, replace the `ud-fe` with your s3 bucket name.
+
 ## Project arch
 ![alt text](udagram-2.png)
