@@ -1,13 +1,44 @@
-# Hosting a Full-Stack Application
+# AWS - CI/CD
+This project is an attempt to learn more about aws services, such as elastic beanstalk, Relational database service (RDS), S3.
+Alongside automating the CI/CD using circleci.
 
-### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
+## Dependencies
+* CircleCI
+* S3
+* RDS
+* EB
+* Nodejs
+## Project setup
 
----
+1. Make sure to add this project into your circleci
+1. Add the following env variables to your circleci project (this one)
+    ```
+    AWS_ACCESS_KEY_ID	
+    AWS_DEFAULT_REGION	
+    AWS_SECRET_ACCESS_KEY	
+    ```
+1. After that make sure to create ElasticBeanstalk (EB) app with nodejs as a plateform
+1. Update  `udagram/udagram-api/.elasticbeanstalk/config.yml` with your EB values
+1. After that you will need to create RDS and pass the db information as env variables to your software env over aws 
+    ```
+    AWS_BUCKET
+    AWS_PROFILE
+    AWS_REGION
+    JWT_SECRET
+    PORT
+    POSTGRES_DB
+    POSTGRES_HOST
+    POSTGRES_PASSWORD
+    POSTGRES_USERNAME
+    URL
+    ```
+1. Inorder to serve the FE you will need to create s3 bucket that's readable
+1. After creating the bucket, update `YOUR-BUCKET-NAME` with the new bucket name in this file (`udagram/udagram-frontend/bin/deploy.sh`)  
+    ```
+    aws s3 cp --recursive --acl public-read ./build s3://YOUR-BUCKET-NAME
 
-In this project you will learn how to take a newly developed Full-Stack application built for a retailer and deploy it to a cloud service provider so that it is available to customers. You will use the aws console to start and configure the services the application needs such as a database to store product information and a web server allowing the site to be discovered by potential customers. You will modify your package.json scripts and replace hard coded secrets with environment variables in your code.
+    ```
+That's it.
 
-After the initial setup, you will learn to interact with the services you started on aws and will deploy manually the application a first time to it. As you get more familiar with the services and interact with them through a CLI, you will gradually understand all the moving parts.
-
-You will then register for a free account on CircleCi and connect your Github account to it. Based on the manual steps used to deploy the app, you will write a config.yml file that will make the process reproducible in CircleCi. You will set up the process to be executed automatically based when code is pushed on the main Github branch.
-
-The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
+## Project arch
+![alt text](udagram-2.png)
