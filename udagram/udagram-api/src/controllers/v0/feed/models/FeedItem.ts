@@ -11,9 +11,9 @@ export class FeedItem extends Model<FeedItem> {
 
   @Column
   @CreatedAt
-  public createdAt: Date = new Date();
+  public createdAt?: Date = new Date();
 
   @Column
   @UpdatedAt
-  public updatedAt: Date = new Date();
+  public updatedAt?: Date = new Date();
 }
