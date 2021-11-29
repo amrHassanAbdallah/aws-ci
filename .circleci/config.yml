@@ -27,7 +27,7 @@ jobs:
             npm run backend:build
   deploy:
     docker:
-      - image: "cimg/base:stable"
+      - image: "cimg/node:14.15.5"
     steps:
       - run:
           name: Deploy BE App
