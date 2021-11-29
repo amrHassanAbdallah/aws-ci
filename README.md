@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/amrHassanAbdallah/aws-ci.svg?style=shield)](https://app.circleci.com/pipelines/github/amrHassanAbdallah/aws-ci?branch=main)
 # AWS - CI/CD
 This project is an attempt to learn more about aws services, such as elastic beanstalk, Relational database service (RDS), S3.
 Alongside automating the CI/CD using circleci.
