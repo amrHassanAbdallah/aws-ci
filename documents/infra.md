@@ -1,7 +1,6 @@
-[![CircleCI](https://circleci.com/gh/amrHassanAbdallah/aws-ci.svg?style=shield)](https://app.circleci.com/pipelines/github/amrHassanAbdallah/aws-ci?branch=main)
-# AWS - CI/CD
-This project is an attempt to learn more about aws services, such as elastic beanstalk, Relational database service (RDS), S3.
-Alongside automating the CI/CD using circleci.
+## Project arch
+![alt text](../udagram-2.png)
+
 
 
 ## Project setup
@@ -35,10 +34,3 @@ Alongside automating the CI/CD using circleci.
 
     ```
 That's it.
-
-### To access the site
-```
-https://ud-fe.s3.amazonaws.com/index.html
-```
-In order to access yours, replace the `ud-fe` with your s3 bucket name.
-
