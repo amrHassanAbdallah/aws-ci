@@ -3,7 +3,7 @@ branch-defaults:
     environment: Be-env
 global:
   application_name: BE
-  default_ec2_keyname: e-67uts5vvis
+  default_ec2_keyname: e-ewwhfs8wv9
   default_platform: Node.js
   default_region: us-east-1
   include_git_submodules: true
