@@ -2,4 +2,4 @@ pwd
 ls 
 cd www
 ls
-eb deploy
+eb deploy --staged
