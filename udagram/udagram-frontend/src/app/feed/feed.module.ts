@@ -5,13 +5,10 @@ import { IonicModule } from '@ionic/angular';
 
 import { FeedListComponent } from './feed-list/feed-list.component';
 import { FeedItemComponent } from './feed-item/feed-item.component';
-import { FeedUploadComponent } from './feed-upload/feed-upload.component';
-import { FeedUploadButtonComponent } from './feed-upload/feed-upload-button/feed-upload-button.component';
 
 import { FeedProviderService } from './services/feed.provider.service';
 
-const entryComponents = [FeedUploadComponent];
-const components = [FeedListComponent, FeedItemComponent, FeedUploadComponent, FeedUploadButtonComponent];
+const components = [FeedListComponent, FeedItemComponent];
 
 @NgModule({
   imports: [
@@ -22,7 +19,6 @@ const components = [FeedListComponent, FeedItemComponent, FeedUploadComponent, F
   ],
   declarations: components,
   exports: components,
-  entryComponents: entryComponents,
   providers: [FeedProviderService]
 })
 export class FeedModule {}
