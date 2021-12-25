@@ -10,13 +10,18 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
   console.log("Running");
-
   dotenv.config();
-  try {
+  console.log("started auth")
+  await sequelize.authenticate();
+  console.log("auth oh yeah")
     await sequelize.addModels(V0_FEED_MODELS);
     await sequelize.addModels(V0_USER_MODELS);
+  try {
+    console.log("before the sync")
     await sequelize.sync();
+    console.log("after the sync")
   } catch (error) {
+    console.log("inside the catch")
     console.log(error)
     process.exit(1)
   }
@@ -40,7 +45,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   // Start the Server
   app.listen(port, () => {
-    console.log(`server running ${process.env.URL}`);
+    console.log(`server running ${process.env.URL} & port ${port}`);
     console.log(`press CTRL+C to stop server`);
   });
 })();
