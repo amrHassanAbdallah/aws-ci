@@ -11,7 +11,6 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 (async () => {
   console.log("Running");
   dotenv.config();
-  console.log(sequelize)
   console.log("started auth")
   await sequelize.authenticate();
   console.log("auth oh yeah")

@@ -38,9 +38,13 @@ That's it.
 
 ### To access the site
 ```
-https://ud-fe.s3.amazonaws.com/index.html
+http://ud-fe-1.s3-website-us-east-1.amazonaws.com/
 ```
 In order to access yours, replace the `ud-fe` with your s3 bucket name.
 
+### To access the BE
+```
+http://hhh-env.eba-7gytkwby.us-east-1.elasticbeanstalk.com/
+```
 ## Project arch
 ![alt text](udagram-2.png)
