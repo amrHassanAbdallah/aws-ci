@@ -26,7 +26,7 @@ jobs:
           command: |
             npm run backend:build
       - persist_to_workspace:
-          root: workspace
+          root: /home/circleci/project
           paths:
             - "./*"
 
@@ -35,7 +35,7 @@ jobs:
       - image: "cimg/node:14.15.5"
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: /home/circleci/project
       - checkout
       - aws-cli/setup
       - eb/setup
