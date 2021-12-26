@@ -7,10 +7,9 @@ jobs:
   build:
     docker:
       - image: "cimg/node:14.15.5"
+    working_directory: /tmp
     steps:
       - checkout
-      - aws-cli/setup
-      - eb/setup
       - run:
           name: Front-End Install
           command: |
@@ -27,11 +26,17 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - "/*"
 
   deploy:
     docker:
       - image: "cimg/node:14.15.5"
     steps:
+      - attach_workspace:
+          at: /tmp/workspace
       - checkout
       - aws-cli/setup
       - eb/setup
