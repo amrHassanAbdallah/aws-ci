@@ -15,7 +15,7 @@ Alongside automating the CI/CD using circleci.
     ```
 1. After that make sure to create ElasticBeanstalk (EB) app with nodejs as a plateform
 1. Update  `udagram/udagram-api/.elasticbeanstalk/config.yml` with your EB values
-1. After that you will need to create RDS and pass the db information as env variables to your software env over aws 
+1. After that you will need to create RDS and pass the db information as env variables to your software env over circleci
     ```
     AWS_BUCKET
     AWS_PROFILE
@@ -40,7 +40,6 @@ That's it.
 ```
 http://ud-fe-1.s3-website-us-east-1.amazonaws.com/
 ```
-In order to access yours, replace the `ud-fe` with your s3 bucket name.
 
 ### To access the BE
 ```

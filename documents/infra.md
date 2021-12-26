@@ -1,6 +1,9 @@
 ## Project arch
 ![alt text](../udagram-2.png)
 
+## Pipeline overview
+![alt text](./pipeline-steps.png)
+
 
 
 ## Project setup
