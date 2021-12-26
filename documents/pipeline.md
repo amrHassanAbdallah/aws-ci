@@ -3,6 +3,11 @@
 
 
 ## Pipeline steps
-![](../screencapture-app-circleci-pipelines-github-amrHassanAbdallah-aws-ci-48-workflows-59b6b475-4d4d-4908-b8b9-d8f743d94d76-jobs-51-2021-12-01-18_45_09.png)
+![](screencapture-app-circleci-pipelines-github-amrHassanAbdallah-aws-ci-89-workflows-d4d1c036-ff31-467b-a6d5-f7f7edef3021-2021-12-26-16_53_20.png)
+
+![](screencapture-app-circleci-pipelines-github-amrHassanAbdallah-aws-ci-89-workflows-d4d1c036-ff31-467b-a6d5-f7f7edef3021-jobs-96-2021-12-26-16_53_33.png)
+
+![](screencapture-app-circleci-pipelines-github-amrHassanAbdallah-aws-ci-89-workflows-d4d1c036-ff31-467b-a6d5-f7f7edef3021-jobs-97-2021-12-26-16_53_43.png)
+
 ## Pipeline last status
-![](../pipe-status.png)
+[![CircleCI](https://circleci.com/gh/amrHassanAbdallah/aws-ci.svg?style=shield)](https://app.circleci.com/pipelines/github/amrHassanAbdallah/aws-ci?branch=main)

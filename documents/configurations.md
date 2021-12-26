@@ -8,9 +8,7 @@
 ![](eb-config.png)
 ### RDS
 ![](rds-config.png)
-### BE
-Configure your EB to have these enviroment vairables setup
-![](BE-config.png)
+
 ### FE
 Update the config in this file
 `udagram\udagram-frontend\src\environments\environment.ts`

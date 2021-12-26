@@ -47,3 +47,7 @@ http://hhh-env.eba-7gytkwby.us-east-1.elasticbeanstalk.com/
 ```
 ## Project arch
 ![alt text](udagram-2.png)
+
+
+## Pipeline overview
+![alt text](./documents/pipeline-steps.png)
